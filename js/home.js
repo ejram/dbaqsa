@@ -2,8 +2,11 @@
 var base_url="http://www.alaqsa.edu.sa/dbaqsa/home/";
 $(document).ready(function()
 		{
+<<<<<<< HEAD
 
 		
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 	Dialogload('#class_delete_dialog','.delete',700,'delete_input_id');
 	Dialogload('#class_delete_dialog','.delete_level_button',700,'delete_input_id');
 	Dialogload('#permission_modify_dialog','.modify_permission',700,'hidden_past_permission_id');
@@ -14,7 +17,11 @@ $(document).ready(function()
 	Dialogload('#skill_add_dialog','.add_skill',700,'hidden_test_id');
 	Dialogload('#teacher_modify_dialog','.modify_teacher',700,'hidden_past_teacher_id');
 	Dialogload('#user_modify_dialog','.modify_user',700,'hidden_past_user_id');
+<<<<<<< HEAD
 	Dialogload('#student_modify_dialog','.modify_student',800,'hidden_past_student_id');
+=======
+	Dialogload('#student_modify_dialog','.modify_student',700,'hidden_past_student_id');
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 	Dialog_load('#level_add_dialog','.add_level',700);
 	Dialog_load('#add_class_dialog','.add_class',700);
 	Dialog_load('#room_insert_dialog','.add_room',700);
@@ -27,7 +34,10 @@ $(document).ready(function()
 	Dialog_load('#assign_insert_dialog','.add_assign',700);
 	Dialog_load('#student_insert_dialog','.add_student',700);
 	Dialog_load('#mark_insert_dialog','.add_mark',700);
+<<<<<<< HEAD
 	Dialog_load('#student_details_dialog','.student_details',800);
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 	
 	$(function() {
@@ -46,8 +56,12 @@ $(document).ready(function()
 	$('<option/>').val('').html('اختر المرحلة').prependTo('.level_drop');
 	$('.level_drop').val('').attr('selected',0);
 	$('.level_drop_permit').val('').attr('selected',0);
+<<<<<<< HEAD
 	$('<option/>').val('choose').html('اختر المعلم').prependTo('.teacher_drop');
 	$('.teacher_drop').val('choose').attr('selected',0);
+=======
+
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 
 
@@ -162,7 +176,11 @@ $(document).ready(function()
 					obj=JSON.parse(data);
 					$('.test_drop').empty();
 
+<<<<<<< HEAD
 					$('<option/>').val('').html('اختر المعيار').appendTo('.test_drop');
+=======
+					$('<option/>').val('').html('اختر المادة').appendTo('.test_drop');
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 					for (i=0;i<obj.length;i++){
 						$('<option/>').val(obj[i]).html(obj[i]).appendTo('.test_drop');
@@ -429,7 +447,11 @@ $(document).ready(function()
 
 
 	$('.modify_teacher').click(function(){
+<<<<<<< HEAD
 		$(".modify_submit").remove();
+=======
+		$("input[type='submit']").remove();
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 		$.post(base_url +'get_teacher',
 				{teacher_id:this.id},		
@@ -441,6 +463,7 @@ $(document).ready(function()
 					delete Obj['teacher_id'];
 					$('.teacher_class').remove();
 					var j=0;
+<<<<<<< HEAD
 					$.each( Obj, function( key, teacher_value ) {
 
 						$('#teacher_modify_form').append("<label class='teacher_class'>"+ teacher_array[j] + "</label>");
@@ -449,12 +472,25 @@ $(document).ready(function()
 						j++;	
 					});
 					$('#teacher_modify_form').append("<input class='modify_submit' type=submit value='تعديل' />");	
+=======
+					$.each( Obj, function( key, value ) {
+
+						$('#teacher_modify_form').append("<label class='teacher_class'>"+ teacher_array[j] + "</label>");
+						$('#teacher_modify_form').append("<input class='teacher_class' type=text name=" + key +" value=" + value + " />");	
+						j++;	
+					});
+					$('#teacher_modify_form').append("<input type=submit value='تعديل' />");	
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 				},"json");		
 	});
 
 	$('.modify_user').click(function(){
+<<<<<<< HEAD
 		$(".modify_submit").remove();
+=======
+		$("input[type='submit']").remove();
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 		$.post(base_url +'get_user',
 				{user_id:this.id},		
@@ -467,6 +503,7 @@ $(document).ready(function()
 					$('.user_class').remove();
 					var j=0;
 
+<<<<<<< HEAD
 					$.each( Obj, function( key, user_value ) {
 
 						$('#user_modify_form').append("<label class='user_class'>"+ user_array[j] + "</label>");
@@ -475,11 +512,21 @@ $(document).ready(function()
 						j++;	
 					});
 					$('#user_modify_form').append("<input class='modify_submit' type=submit value='تعديل' />");	
+=======
+					$.each( Obj, function( key, value ) {
+
+						$('#user_modify_form').append("<label class='user_class'>"+ user_array[j] + "</label>");
+						$('#user_modify_form').append("<input class='user_class' type=text name=" + key +" value=" + value + " />");	
+						j++;	
+					});
+					$('#user_modify_form').append("<input type=submit value='تعديل' />");	
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 				},"json");		
 	});
 
 	$('.modify_student').click(function(){
+<<<<<<< HEAD
 		$(".modify_submit").remove();
 		$.post(base_url + 'get_student',
 				{st_id:this.id},		
@@ -515,6 +562,9 @@ $(document).ready(function()
 	
 	
 	$('.student_details').click(function(){
+=======
+		$("input[type='submit']").remove();
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 		$.post(base_url + 'get_student',
 				{st_id:this.id},		
 				function(data){
@@ -522,6 +572,7 @@ $(document).ready(function()
 					jsonStr = jsonStr.replace('[','');
 					jsonStr = jsonStr.replace(']','');
 					var Obj = jQuery.parseJSON(jsonStr);
+<<<<<<< HEAD
 					var srce = Obj['st_pic'];
 					delete Obj['st_pic'];
 					delete Obj['st_id'];
@@ -535,6 +586,18 @@ $(document).ready(function()
 					
 						j++;	
 					});
+=======
+					delete Obj['st_id'];
+					$('.student_class').remove();
+					var j=0;
+					$.each( Obj, function( key, value ) {
+
+						$('#student_modify_form').append("<label class='student_class'>"+ student_array[j] + "</label>");
+						$('#student_modify_form').append("<input class='student_class' type=text name=" + key +" value=" + value + " />");	
+						j++;	
+					});
+					$('#student_modify_form').append("<input type=submit value='تعديل' />");	
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 				},"json");	
 
@@ -560,7 +623,10 @@ $(document).ready(function()
 	form_submit('#permission_search_form','permission_search');
 	form_submit('#modify_class_form','modify_class');
 	form_submit('#modify_level_form','modify_level');
+<<<<<<< HEAD
 	form_submit('#modify_mark_form','modify_mark');
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 	form_submit('#room_modify_form','modify_room');
 	form_submit('#teacher_modify_form','modify_teacher');
 	form_submit('#user_modify_form','modify_user');
@@ -652,6 +718,7 @@ $(document).ready(function()
 		$('#level_modify_dialog').dialog('open');
 		return false;
 	});
+<<<<<<< HEAD
 	
 		//open dialog to modify a mark.
 	$('#mark_modify_dialog').dialog( { autoOpen: false, draggable: false,
@@ -665,6 +732,8 @@ $(document).ready(function()
 		$('#mark_modify_dialog').dialog('open');
 		return false;
 	});
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 
 	//open dialog to insert a new room.
@@ -719,15 +788,30 @@ function form_submit(submit_form,submit_dest)
 {
 
 			$(submit_form).validate({
+<<<<<<< HEAD
 				submitHandler: function(submit_form) {						
+=======
+				   submitHandler: function(submit_form) {						
+						$(submit_form).submit(function()
+								{
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 							
 							$.post(base_url + submit_dest,
 									$(submit_form).serialize(),
 									function(data){
+<<<<<<< HEAD
 								 window.location.reload(true);
 							});
 				
 										
+=======
+
+								window.location.reload(true);
+							});
+							return false;
+				
+								});			
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 				   }	
 			})
 

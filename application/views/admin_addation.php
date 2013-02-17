@@ -105,6 +105,7 @@
 	?>
 </div>
 
+<<<<<<< HEAD
 <!-- modify_mark_dialog to modify a mark in the marks page -->
 <div id="mark_modify_dialog" title="تعديل العلامة" class='dialog_div' >
 	<?php
@@ -134,6 +135,8 @@
 	?>
 </div>
 
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 <!-- Modify Room form -->
 <div id="room_modify_dialog" title="تعديل الفصل" class='dialog_div'>
 	<?php 
@@ -208,6 +211,7 @@
 											'style' => 'display:none;'
 											);
 			$att=array('id'=>'student_modify_form');
+<<<<<<< HEAD
 			$levels = $this->mhome->get_levels();
 			$begin_para = array(''=>'');
 
@@ -215,6 +219,10 @@
 			echo '<p><label>المرحلة:</label>'. form_dropdown('st_level',$levels,'','class="level_drop"').'</p>';
 			echo '<p><label>الصف:</label>'. form_dropdown('st_class',$begin_para ,'','class="class_drop"').'</p>';
 			echo '<p><label>الفصل:</label>'. form_dropdown('st_room',$begin_para ,'','class="room_drop"').'</p>';
+=======
+			echo form_open('',$att);
+
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 			echo form_input($student_hidden_past_id);
 				
 			echo form_close();
@@ -225,6 +233,7 @@
 
 </div>
 
+<<<<<<< HEAD
 <!--  student details dialog -->
 <div id="student_details_dialog" title="بيانات طالب" class='dialog_div'>
 
@@ -232,6 +241,8 @@
 
 </div>
 
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 <!-- modify permission dialog -->
 <div id="permission_modify_dialog" title="تعديل سماحيات مستخدم" class='dialog_div'>
 
@@ -378,7 +389,11 @@
 			echo '<p><label>الصف:</label>'. form_dropdown('assign_class',$begin_para ,'','class="class_drop"').'</p>';
 			echo '<p><label>الفصل:</label>'. form_dropdown('assign_room',$begin_para ,'','class="room_drop"').'</p>';
 			echo '<p><label>المادة:</label>'. form_dropdown('assign_subject',$begin_para,'','class="subject_drop"').'</p>';
+<<<<<<< HEAD
 			echo '<p><label>اسم المعلم:</label>'. form_dropdown('assign_teacher',$teachers,'','class="teacher_drop"').'</p>';
+=======
+			echo '<p><label>اسم المعلم:</label>'. form_dropdown('assign_teacher',$teachers,'','class=""').'</p>';
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 			
 				
 			echo form_input($assign_hidden_past_id);
@@ -573,12 +588,19 @@
 	echo "<div id='insert_assign_div' style=''>";
 	$att=array('id'=>'assign_insert_form');
 	$levels = $this->mhome->get_levels();
+<<<<<<< HEAD
 	$teachers = $this->mhome->get_teachers();
 
 		
 	$begin_para = array(''=>'');
 	echo form_open('',$att);
 	echo '<p><label>اسم المعلم:</label>'. form_dropdown('assign_teacher',$teachers ,'','class="teacher_drop"').'</p>';
+=======
+		
+	$begin_para = array(''=>'');
+	echo form_open('',$att);
+	echo '<p><label>اسم المعلم:</label>'. form_input('assign_teacher','','class=required').'</p>';
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 	echo '<p><label>المرحلة:</label>'. form_dropdown('assign_level',$levels ,'','class="level_drop"').'</p>';
 	echo '<p><label>الصف:</label>'. form_dropdown('assign_class',$begin_para ,'','class="class_drop"').'</p>';
 	echo '<p><label>الفصل:</label>'. form_dropdown('assign_room',$begin_para ,'','class="room_drop"').'</p>';
@@ -620,6 +642,7 @@
 			$att=array('id'=>'student_insert_form');
 			$levels = $this->mhome->get_levels();			
 			$begin_para = array(''=>'');
+<<<<<<< HEAD
 			echo '<div id="upload_div"><form>
 		
 		إدراج صورة الطالب:
@@ -629,6 +652,10 @@
 		</div>';
 			echo form_open('',$att);
 			echo '<input type="hidden" name="st_picture" id="hidden_pic"/>';
+=======
+			
+			echo form_open('',$att);
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 			echo '<p><label> الجنسية:</label>'. form_input('st_nationality','').'</p>';
 			echo '<p><label> رقم جواز السفر:</label>'. form_input('st_passnum','','class=required number').'</p>';
 			echo '<p><label> رقم السجل المدني للطالب/الإقامة:</label>'. form_input('st_urbannum','').'</p>';
@@ -685,6 +712,7 @@
 			echo '<p><label> مستوى تعليم الأب:</label>'. form_input('st_fatheredulevel','').'</p>';
 			echo '<p><label> مستوى تعليم الأم:</label>'. form_input('st_motheredulevel','').'</p>';
 			echo '<p><label> مع من يسكن الطالب:</label>'. form_input('st_livingwith','').'</p>';
+<<<<<<< HEAD
 			echo '<p><label>المرحلة:</label>'. form_dropdown('st_level',$levels ,'','class="level_drop"').'</p>';
 			echo '<p><label>الصف:</label>'. form_dropdown('st_class',$begin_para ,'','class="class_drop"').'</p>';
 			echo '<p><label>الفصل:</label>'. form_dropdown('st_room',$begin_para ,'','class="room_drop"').'</p>';
@@ -695,6 +723,25 @@
 	
 	?>
 </div>
+=======
+
+			echo '<p><label>المرحلة:</label>'. form_dropdown('st_level',$levels ,'','class="level_drop"').'</p>';
+			echo '<p><label>الصف:</label>'. form_dropdown('st_class',$begin_para ,'','class="class_drop"').'</p>';
+			echo '<p><label>الفصل:</label>'. form_dropdown('st_room',$begin_para ,'','class="room_drop"').'</p>';
+				
+
+
+
+			echo '<p>'.form_submit('submit','إضافة').'</p>';
+
+
+			echo form_close();
+			echo "</div>";
+	
+	?>
+</div>
+
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 </body>
 </html>
 

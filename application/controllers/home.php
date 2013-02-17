@@ -151,6 +151,7 @@ class home extends CI_Controller {
 	}
 
 	//////////////////
+<<<<<<< HEAD
 	public function upload_file() {
 $targetFolder = '/st_pics'; // Relative to the root
 
@@ -172,6 +173,10 @@ if (!empty($_FILES) && $_POST['token'] == $verifyToken) {
 		echo 'Invalid file type.';
 	}
 }
+=======
+	public function report() {
+
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 	
 	}
 
@@ -179,8 +184,11 @@ if (!empty($_FILES) && $_POST['token'] == $verifyToken) {
 
 	//////////////////
 	public function student_insert() {
+<<<<<<< HEAD
 
       
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 		$att1 = array(
 				'st_nationality' 	=> $_POST ['st_nationality'],
 				'st_passnum'		=> $_POST ['st_passnum'],
@@ -240,8 +248,12 @@ if (!empty($_FILES) && $_POST['token'] == $verifyToken) {
 				'st_livingwith'		=> $_POST ['st_livingwith'],
 				'st_level' 			=> $_POST ['st_level'],
 				'st_class'			=> $_POST ['st_class'],
+<<<<<<< HEAD
 				'st_room'			=> $_POST ['st_room'],
 				'st_pic'			=> $_POST ['st_picture']
+=======
+				'st_room'			=> $_POST ['st_room']
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 					
 		);
 		$this->ins_query('aq_students',$att1);
@@ -352,6 +364,7 @@ foreach($test->result() as $row2)
 		$this->db->where('level_id', $level_past_name);
 		$this->db->update('aq_levels', $modify_att);
 	}
+<<<<<<< HEAD
 	
 		/////////////////
 	public function modify_mark(){
@@ -364,6 +377,8 @@ foreach($test->result() as $row2)
 	}
 	
 	
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 	/////////////////
 	public function modify_room(){
 		$level_name= $_POST['room_insert_level_name'];
@@ -819,8 +834,12 @@ $att1 = array(
 				'st_livingwith'		=> $_POST ['st_livingwith'],
 				'st_level' 			=> $_POST ['st_level'],
 				'st_class'			=> $_POST ['st_class'],
+<<<<<<< HEAD
 				'st_room'			=> $_POST ['st_room'],
 				'st_pic'			=> $_POST ['st_pic']
+=======
+				'st_room'			=> $_POST ['st_room']
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 					
 		
 	

@@ -4,13 +4,22 @@
 
 <meta charset="UTF-8" />
 <title>Alaqsa database</title>
+<<<<<<< HEAD
 
 <link rel="stylesheet" type="text/css" href="<?= base_url(); ?>css/uploadify.css">
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 <script language="javascript" type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script language="javascript" type="text/javascript"
 	src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+<<<<<<< HEAD
 <script src="<?= base_url(); ?>js/jquery.uploadify.min.js" type="text/javascript"></script>
+=======
+<script>
+
+</script>
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 <link rel="stylesheet" href="<?= base_url(); ?>css/style.css"
 	type="text/css" />
 <!--[if IE 6]><link rel="stylesheet" href="<?= base_url(); ?>css/style.ie6.css" type="text/css"  /><![endif]-->
@@ -24,12 +33,16 @@
 	type="text/css" />
 
 
+<<<<<<< HEAD
 <script src="<?= base_url();?>js/jquery.uploadify.min.js"></script>
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 <script src="<?= base_url();?>js/home.js"></script>
 <script src="<?= base_url();?>js/report.js"></script>
 <script
 	src="<?= base_url();?>css/jquery-ui/js/jquery-ui-1.10.0.custom.min.js"></script>
+<<<<<<< HEAD
 	<script type="text/javascript">
 		<?php $timestamp = time();?>
 		$(function() {
@@ -51,6 +64,9 @@
 			});
 		});
 	</script>
+=======
+
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 </head>
 <body dir="rtl">
 	<div id="art-page-background-middle-texture">
@@ -80,20 +96,33 @@
 							{
 								case 'admin':
 									?>
+<<<<<<< HEAD
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_users"><span
 									class="l"></span><span class="r"></span><span class="t">
 										المستخدمين </span> </a>
 							</li>
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_permissions"> <span
+=======
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_users"><span
+									class="l"></span><span class="r"></span><span class="t">
+										المستخدمين </span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_permissions"> <span
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									class="l"></span><span class="r"></span><span class="t">إدارة
 										السماحيات</span>
 							</a>
 							</li>
+<<<<<<< HEAD
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_levels"> <span
+=======
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_levels"> <span
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									class="l"></span><span class="r"></span><span class="t">المراحل</span>
 							</a>
 							</li>
 
+<<<<<<< HEAD
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_classes"><span
 									class="l"></span><span class="r"></span><span class="t"> الصفوف</span>
 							</a>
@@ -103,10 +132,22 @@
 							</a>
 							</li>
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_teachers"><span
+=======
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_classes"><span
+									class="l"></span><span class="r"></span><span class="t"> الصفوف</span>
+							</a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_rooms"><span
+									class="l"></span><span class="r"></span><span class="t"> الفصول</span>
+							</a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_teachers"><span
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									class="l"></span><span class="r"></span><span class="t">
 										المعلمين </span> </a>
 							</li>
 
+<<<<<<< HEAD
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_assign"><span
 									class="l"></span><span class="r"></span><span class="t">
 										الإسناد </span> </a>
@@ -124,11 +165,34 @@
 										المعايير </span> </a>
 							</li>
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_skills"><span
+=======
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_assign"><span
+									class="l"></span><span class="r"></span><span class="t">
+										الإسناد </span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_students"><span
+									class="l"></span><span class="r"></span><span class="t"> الطلاب
+								</span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_subjects"><span
+									class="l"></span><span class="r"></span><span class="t"> المواد
+								</span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_tests"><span
+									class="l"></span><span class="r"></span><span class="t">
+										المعايير </span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_skills"><span
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									class="l"></span><span class="r"></span><span class="t">
 										المهارات </span> </a>
 							</li>
 
+<<<<<<< HEAD
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_reports"><span
+=======
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_reports"><span
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									class="l"></span><span class="r"></span><span class="t">
 										التقارير</span> </a>
 							</li>
@@ -136,6 +200,7 @@
 							break;
 					case 'user':	?>
 
+<<<<<<< HEAD
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_tests"><span
 									class="l"></span><span class="r"></span><span class="t">
 										المعايير </span> </a>
@@ -145,6 +210,17 @@
 										المهارات </span> </a>
 							</li>
 							<li><a href="<?= base_url(); ?>home/c_panel/aq_marks"><span
+=======
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_tests"><span
+									class="l"></span><span class="r"></span><span class="t">
+										المعايير </span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_skills"><span
+									class="l"></span><span class="r"></span><span class="t">
+										المهارات </span> </a>
+							</li>
+							<li><a href="<?= base_url(); ?>Home/c_panel/aq_marks"><span
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									class="l"></span><span class="r"></span><span class="t">
 										الدرجات </span> </a>
 							</li>

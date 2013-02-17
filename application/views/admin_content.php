@@ -217,9 +217,15 @@
 				case 'aq_students':
 					$this->table->add_row('<input type="checkbox"
 							name="check_list[]" value=\''. $row->st_id .'\' />',
+<<<<<<< HEAD
 							$row->st_fna,$row->st_ffna,$row->st_lna,$row->st_level
 							,$row->st_class,$row->st_room,
 							'<span id = '.$row->st_id.' class=\'student_details\'>
+=======
+							$row->st_fna,$row->st_ffna,$row->st_gfna,$row->st_level
+							,$row->st_class,$row->st_room,
+							'<span id = '.$row->st_id.' class=\'show_details\'>
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 									عرض التفاصيل</span>',
 									'<span id = '.$row->st_id.' class=\'modify_student\'>
 											تعديل </span>'
@@ -382,7 +388,10 @@
 		if($table_data=='aq_students')
 		{
 			echo "<button class='add_student add'>إضافة طالب</button>";
+<<<<<<< HEAD
 
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 		
 		}
 	}
@@ -428,7 +437,11 @@
 		$att = array('id' => 'table_form');
 		echo form_open('', $att);
 		$tmpl = array ( 'table_open'  => '<table class = "mytable"
+<<<<<<< HEAD
 				cellpadding = "5" cellspacing = "3" align="center">'
+=======
+				cellpadding = "5" cellspacing = "3">'
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 		);
 		$this->table->set_template($tmpl);
 		switch ($table_data)
@@ -451,11 +464,17 @@
 
 
 			case 'aq_marks':
+<<<<<<< HEAD
 				$this->table->set_heading('<input type="checkbox"
 						name="mark_check" value="all"/>','المرحلة', 'الصف', 'الفصل', 'المادة', 'المعيار', 'المهارة', 'الطالب','العلامة','تعديل العلامة'
 						);
 						echo form_hidden('hidden_table_name',$table_data);
 						echo form_hidden('hidden_item_id','mark_id');		
+=======
+				$this->table->set_heading('المرحلة', 'الصف', 'الفصل', 'المادة', 'المعيار', 'المهارة', 'الطالب','العلامة'
+						);
+
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 				break;
 			default:
@@ -508,12 +527,20 @@
 							$mark_st=$this->mhome->get_where('aq_students', array('st_id'=>$row3->mark_student
 							));
 							foreach($mark_st->result() as $student_fn)
+<<<<<<< HEAD
 								$this->table->add_row('<input type="checkbox"
 							name="check_list[]" value=\''. $row3->mark_id .'\' />',$row3->mark_level,
 										$row3->mark_class,$row3->mark_room,
 										$row3->mark_subject,$row3->mark_test, $row3->mark_skill,
 										$student_fn->st_fna . ' ' . $student_fn->st_ffna . ' ' . $student_fn->st_lna,
 										$row3->mark_value,'<span id = '.$row3->mark_id.' class=\'modify_mark\'>تعديل</span>'
+=======
+								$this->table->add_row($row3->mark_level,
+										$row3->mark_class,$row3->mark_room,
+										$row3->mark_subject,$row3->mark_test, $row3->mark_skill,
+										$student_fn->st_fna . ' ' . $student_fn->st_ffna . ' ' . $student_fn->st_lna,
+										$row3->mark_value
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 
 								);
 
@@ -532,15 +559,22 @@
 
 
 		echo $this->table->generate();
+<<<<<<< HEAD
 		if($table_data=='aq_marks')
 		echo form_submit('submit','حذف');
+=======
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 		echo form_close();
 
 
 		//insert mark form
 		if($table_data=='aq_marks')
 		{
+<<<<<<< HEAD
 			echo "<button class='add_mark add'>إضافة علامة</button>";
+=======
+			echo "<button class='add_mark'>إضافة علامة</button>";
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 				
 
 		}

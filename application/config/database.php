@@ -50,7 +50,11 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'www.alaqsa.edu.sa';
 $db['default']['username'] = 'alaqsa';
+<<<<<<< HEAD
 $db['default']['password'] = 'Smartiphone';
+=======
+$db['default']['password'] = 'sa6880921';
+>>>>>>> d8bb4d94a0e1d9b86b0d865b4b135c29c235e7a0
 $db['default']['database'] = 'alaqsa_dbaqsa';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
