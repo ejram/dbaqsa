@@ -1,0 +1,38 @@
+#report_header{
+	
+	top:0;
+	border-bottom: 2px solid black;
+	text-align:center;
+}
+#pre{
+	text-align:center;
+	font-size:18px;
+	letter-spacing:1px;
+	margin-top:10px;
+	margin-bottom:10px;
+	word-spacing:50px;
+	letter-spacing:1px;
+	
+}
+
+.mytable
+{
+    border: 2px solid #000;
+    direction:rtl;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top:10px;
+    
+}
+.mytable td{
+	    border: 1px solid #000;
+	
+}
+.mytable th{
+		    border: 1px solid #000;
+	
+}
+tr, td, th {page-break-inside:avoid}
+    thead {display:table-header-group}
+    .NoPrint {visibility:hidden; display:none}
+    a {color:#000000}
